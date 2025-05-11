@@ -78,7 +78,7 @@
         <div class="relative h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-auto">
             <video autoplay loop muted playsinline
                  class="w-full h-full object-cover lg:h-auto lg:object-contain">
-                 <source src="./assets/images/videos/sequence01.mp4" type="video/mp4">
+                 <source src="https://j3zme2x58d.ufs.sh/f/bcYBFPruJCNgOWYOc9AD0EVrxv97dtTK3IUsLaJOqmyguwjG" type="video/mp4">
                  Your browser does not support the video tag.
             </video>
             <div class="absolute inset-0  flex items-center justify-center text-center bg-black bg-opacity-20">
@@ -1186,52 +1186,6 @@
                         body.style.overflow = '';
                     }
                 });
-            }
-
-            // Video Debugging Script
-            const videoElement = document.querySelector('video'); // Assumes you only have one video tag on the page
-            if (videoElement) {
-                console.log('Video element found:', videoElement);
-                const sourceElement = videoElement.querySelector('source');
-                if (sourceElement) {
-                    console.log('Video source URL:', sourceElement.src);
-                } else {
-                    console.log('No source element found inside video tag.');
-                }
-
-                videoElement.addEventListener('error', (e) => {
-                    console.error('Video Error Event:', e);
-                    if (videoElement.error) {
-                        console.error('Video Error Code:', videoElement.error.code);
-                        console.error('Video Error Message:', videoElement.error.message);
-                    }
-                });
-                videoElement.addEventListener('stalled', (e) => {
-                    console.warn('Video Stalled Event:', e);
-                });
-                videoElement.addEventListener('suspend', (e) => {
-                    console.warn('Video Suspend Event:', e);
-                });
-                videoElement.addEventListener('waiting', (e) => {
-                    console.warn('Video Waiting Event:', e);
-                });
-                videoElement.addEventListener('canplay', (e) => {
-                    console.log('Video CanPlay Event:', e);
-                });
-                videoElement.addEventListener('loadedmetadata', (e) => {
-                    console.log('Video LoadedMetaData Event:', e);
-                    console.log('Video duration:', videoElement.duration);
-                    console.log('Video dimensions:', videoElement.videoWidth, 'x', videoElement.videoHeight);
-                });
-                videoElement.addEventListener('loadeddata', (e) => {
-                    console.log('Video LoadedData Event:', e);
-                });
-
-                // Attempt to play it if not already (Vercel might block autoplay without interaction sometimes)
-                // videoElement.play().catch(error => console.warn('Autoplay failed:', error));
-
-            } else {
-                console.error('Video element NOT found on the page.');
             }
         });
     </script>
