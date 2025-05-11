@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/homepage.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Shri Swami Bhumanand Hospital | Doctors Page</title>
+</head>
+
+<body>
+
+    <header class="bg-[#FCF0E9] shadow-md py-2 md:py-0 relative">
+        <section class="flex items-center justify-between lg:justify-start px-4 lg:px-0 relative z-[60]">
+            <a href="../index.html" class="flex items-center no-underline text-inherit lg:w-1/3 lg:px-4">
+                <img src="../assets/images/icons/website-logo.svg" alt="Website Logo" class="mr-2 h-16 md:h-20 lg:mr-4">
+                <h1 class="website-logo-heading text-xl md:text-2xl lg:text-3xl py-1">Shri Swami Bhumanand Hospital</h1>
+            </a>
+
+            <div class="hidden lg:block lg:w-2/3">
+                <nav>
+                    <div class="w-full flex justify-end exploreOurHealthcare px-14 py-5 gap-x-10">
+                        <a href="#" class="commonButtonContent">Patient Care</a>
+                        <a href="../facilities.html" class="commonButtonContent">Facilities</a>
+                        <a href="../health-resources/index.html" class="commonButtonContent">Health Resources</a>
+                        <a href="../contact.html" class="commonButtonContent">Contact Us</a>
+                    </div>
+                    <div class="w-full flex justify-end items-center px-4 py-4 gap-x-6">
+                        <a href="../index.html" class="commonButtonBlueContent">Home</a>
+                        <a href="../about.html" class="commonButtonBlueContent">About Us</a>
+                        <a href="../services/index.html" class="commonButtonBlueContent">Medical Services</a>
+                        <a href="../doctors/index.html" class="commonButtonBlueContent">Doctors</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                            class="commonButtonBlueContent navbarAppointmentButton flex items-center gap-x-3">
+                            <i class="fa-solid fa-calendar-days" style="color: #FC6A1F;"></i>
+                            <span class="navbarAppointmentButtonText">Book an Appointment</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-[#3E4095] hover:text-[#FC6A1F] focus:outline-none p-2">
+                    <i class="fas fa-bars text-3xl"></i>
+                </button>
+            </div>
+        </section>
+
+        <nav id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white mt-[5rem] shadow-lg z-50 overflow-y-auto">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Patient Care</a>
+                <a href="../facilities.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Facilities</a>
+                <a href="../health-resources/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Health Resources</a>
+                <a href="../contact.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Contact Us</a>
+                <hr class="my-2">
+                <a href="../index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Home</a>
+                <a href="../about.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">About Us</a>
+                <a href="../services/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Medical Services</a>
+                <a href="../doctors/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Doctors</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                    class="block py-2 px-3 border border-orange-500 mt-11 rounded-md text-orange-500 hover:bg-orange-500 hover:text-white flex items-center gap-x-2 justify-center mt-2">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Book an Appointment</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+   
+   
+    <main>
+
+        <!-- Our Services Section  -->
+
+        <section class="px-4 sm:px-6 lg:px-9 pt-12 md:pt-16">
+            <div class="flex flex-col md:flex-row justify-between items-center yaleBlue rounded-xl px-4 py-4 md:px-6 md:py-5" data-aos="fade-down">
+                <h2 class="text-white font-semibold text-[2rem] md:text-[2.5rem] leading-normal text-center md:text-left mb-4 md:mb-0 ml-8">Meet Our Doctors</h2>
+                <div class="relative w-full md:w-auto md:max-w-xs lg:max-w-sm" data-aos="fade-left" data-aos-delay="100">
+                    <input type="text" id="doctorSearchInput" placeholder="Search Doctors..." 
+                           class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-[#FC6A1F] text-gray-700 placeholder-gray-500">
+                    <span class="absolute inset-y-0 right-0 flex items-center pr-3">
+                        <i class="fas fa-search text-gray-400"></i>
+                    </span>
+                </div>
+            </div>
+        </section>
+
+        <section class="md:px-9 px-5 pt-10 pb-5 md:py-16">
+            <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-x-3 gap-y-8">
+                    <a href="./dr-aditya-singh.html"
+                        class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="100">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Aditya Singh.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Aditya Singh</h2>
+                            <p class="doctorDesignation">Cranio Maxillo Fascial Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="./dr-akash-jain.html"
+                        class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="150">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Akash Jain.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Akash Jain</h2>
+                            <p class="doctorDesignation">General & Laparoscopic Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="./dr-ankit-goyal.html"
+                        class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="200">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Ankit Goyal.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Ankit Goyal</h2>
+                            <p class="doctorDesignation">E.N.T Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="./dr-annu-agarwal.html"
+                        class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="250">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Annu Agarwal.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Annu Agarwal</h2>
+                            <p class="doctorDesignation">Consultant Orthopaedic</p>
+                        </div>
+                    </a>
+                    <a href="#"
+                        class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="300">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Anshul Gupta.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Anshul Gupta</h2>
+                            <p class="doctorDesignation">Gynaecologist</p>
+                        </div>
+                    </a>
+                    <a href="" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="350">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Ashwani Saxena.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Ashwani Saxena</h2>
+                            <p class="doctorDesignation">General Medicine</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="400">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Deepak Purohit.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Deepak Purohit</h2>
+                            <p class="doctorDesignation">Gastroenterology </p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="450">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Fayaz Ahmad Bhat.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Fayaz Ahmad</h2>
+                            <p class="doctorDesignation">Cardiologist</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="500">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Kunal Kumar.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Kunal Kumar</h2>
+                            <p class="doctorDesignation">Pulmonologist</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="550">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Mausam Jefferin.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Mausam Jeffries</h2>
+                            <p class="doctorDesignation">Orthopedic & Joint Replacement Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="600">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Nitin Verma.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Nitin Verma</h2>
+                            <p class="doctorDesignation">General Physician</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="650">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Nitish Saini.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Nitish Saini</h2>
+                            <p class="doctorDesignation">Anaesthetist</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="700">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. R S Prasad.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. R S Prasad</h2>
+                            <p class="doctorDesignation">General Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="750">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Ravindra Pandey.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Ravindra Pandey</h2>
+                            <p class="doctorDesignation">Radiologist</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="800">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Richa Jain.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Richa Jain</h2>
+                            <p class="doctorDesignation">Dentist</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="850">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Rizwan Rashid.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Rizwan Rashid</h2>
+                            <p class="doctorDesignation">Senior Ophthalmologist & Eye Surgeon</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="900">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Saloni Bassi Masson.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Saloni Bassi Masson</h2>
+                            <p class="doctorDesignation">Paediatrician</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="950">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Sargam Sharma.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Sargam Sharma</h2>
+                            <p class="doctorDesignation">Dietician</p>
+                        </div>
+                    </a>
+                    <a href="dr-saurabh-tripathi.html" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="1000">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Saurabh Tripathi.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Saurabh Tripathi</h2>
+                            <p class="doctorDesignation">Paediatrician</p>
+                        </div>
+                    </a>
+                    <a href="#" class="flex flex-col items-center text-center bg-white w-full doctorCard fade-in hover-effect" data-aos="fade-up" data-aos-delay="1050">
+                        <div class="flex justify-center w-full">
+                            <img src="../assets/images/doctors/Dr. Suman Semwal.png"
+                                alt="Dr. Aditya Singh - Laparoscopic Surgeon">
+                        </div>
+                        <div class="w-full bg-white py-6">
+                            <h2 class="doctorsName pb-2">Dr. Suman Semwal</h2>
+                            <p class="doctorDesignation">Physitherapist</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Latest Articles Section -->
+
+        <section class="w-full">
+            <div class="text-center pt-6 pb-10 sm:pt-10 sm:pb-20" data-aos="fade-up">
+                <h1 class="homepageSectionTitle">What Our Patients Say?</h1>
+            </div>
+            <div id="patientSliderContainer" data-aos="fade-up" data-aos-delay="100">
+                <div class="relative">
+                    <button id="prevArrow" class="sliderArrow left-0 hidden sm:block"><i class="fa-solid fa-arrow-left"
+                            style="color: #8e8fad;"></i></button>
+                    <button id="nextArrow" class="sliderArrow right-0 hidden sm:block"><i class="fa-solid fa-arrow-right"
+                            style="color: #8e8fad;"></i></button>
+                </div>
+                <div id="patientSlider" class="flex px-4 md:px-8 lg:px-20">
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="../assets/images/patients/rajan-bhardwaj.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Rajan Bhardwaj</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">It's most valuable hospital & many many type of facilities for
+                                every patents like easily provide treatment by staff without any small problems
+                                comparison to other hospital management.</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-3 md:pt-12">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="../assets/images/patients/arvind-kumar.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Arvind Kumar</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pr-11">I got my wife treated by Dr. Ram Shankar Prasad ji. Currently, all the
+                                doctors and staff are good. Thank you.</p>
+                        </div>
+                        <div class="flex gap-x-1  pt-3 md:pt-24">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="../assets/images/patients/sohit-thakur.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Sohit Thakur</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pr-11 pb-2">Hamara baby bahot sick tha preterm tha. NICU me admit hua. Dr
+                                Saurabh Tripathi aur NICU ke staff ki mehnat se thik ho gaya. Staff bahot hi caring tha.
+                                Thank you.</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-4 md:pt-16">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="../assets/images/patients/arish-abbasi.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Arish Abbasi</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">Bhumanad ek no hospital hai or yaha ke dr bhi bhot best hai or
+                                staf ka nature kafi acha hai wese Mera naam mukul Sharma hai mene apni beti ko dr
+                                saurabh tripathi ji ko dikhaya tha unhone bhot ache se treatment Kiya or bhumanand me
+                                facility Jada h yaha hai</p>
+                        </div>
+                        <div class="flex gap-x-1 ">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="../assets/images/patients/naitik-churkhandi.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Naitik Churkhandi</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">I had come to visit Haridwar, here my friend needed dialysis, we
+                                came here to this hospital, I was surprised to see the facilities of the hospital and
+                                the cooperation of the dialysis staff. The knowledge and behavior of the doctors as well
+                                as the senior dialysis staff is like nothing I have ever seen before.</p>
+                        </div>
+                        <div class="flex gap-x-1">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="../assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-10 mb-4">
+                    <span class="patientDot" data-slide="prev"></span>
+                    <span class="patientDot active" data-slide="current"></span>
+                    <span class="patientDot" data-slide="next"></span>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer Section  -->
+    <footer class="bg-[#003D7A] text-white pt-20 pb-8">
+        <div class="w-full px-4 sm:px-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Shri Swami Bhumanand Hospital</h3>
+                    <p class="mb-4 leading-relaxed text-[#FCF0E9]">
+                        Rishikesh - Badrinath Rd, near AIIMS Rishikesh,<br />
+                        Shivaji Nagar, Rishikesh, Uttarakhand 249203
+                    </p>
+                    <div class="flex items-center mb-2 text-[#FCF0E9]">
+                        <i class="fas fa-phone-alt mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">+91 84494 49955</span>
+                    </div>
+                    <div class="flex items-center text-[#FCF0E9]">
+                        <i class="fas fa-envelope mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">info@bhumanand.org</span>
+                    </div>
+                </div>
+                <div class="footer-section sm:px-12 lg:px-24">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Quick Links</h3>
+                    <ul class="space-y-2 text-[#E0E0E0]">
+                        <li><a href="../index.html" class="hover:text-orange-300 transition duration-200">Home</a></li>
+                        <li><a href="../about.html" class="hover:text-orange-300 transition duration-200">About Us</a></li>
+                        <li><a href="./index.html" class="hover:text-orange-300 transition duration-200">Our Services</a></li>
+                        <li><a href="../doctors/index.html" class="hover:text-orange-300 transition duration-200">Doctors</a></li>
+                        <li><a href="../contact.html" class="hover:text-orange-300 transition duration-200">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section sm:px-5 lg:px-10">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Offerings</h3>
+                    <ul class="space-y-2 text-[#FCF0E9]">
+                        <li><a href="./cardiology.html" class="hover:text-orange-300 transition duration-200">Cardiology</a></li>
+                        <li><a href="./neurology.html" class="hover:text-orange-300 transition duration-200">Neurology</a></li>
+                        <li><a href="./orthopedics.html" class="hover:text-orange-300 transition duration-200">Orthopedics</a></li>
+                        <li><a href="./gastroenterology.html" class="hover:text-orange-300 transition duration-200">Gastroenterology</a></li>
+                        <li><a href="./gynecology.html" class="hover:text-orange-300 transition duration-200">Gynecology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4 text-[#FCF0E9]">
+                        <a href="https://www.facebook.com/SSBHospital?rdid=Oc79kSO64vpcgUFf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jAcdRq1s%2F#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ssb_hospital/?igsh=cW9ocWQ1bXpuemRh#" class="text-2xl hover:text-orange-300 transition duration-200">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@bhumanandhospital" class="text-2xl hover:text-orange-300 transition duration-200">
+                                <i class="fab fa-youtube"></i>
+                        </a>
+                                
+                    </div>
+                    <p class="mb-2 text-gray-200 text-[#FCF0E9]">Subscribe to our newsletter for updates</p>
+                    <div class="mt-6 flex text-[#FCF0E9]">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 w-full text-gray-800 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-md transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-16 pt-4 px-4 sm:px-6 text-sm text-[#FCF0E9]">
+            <div class="flex flex-col sm:flex-row justify-between items-center w-full sm:px-20 text-center sm:text-left">
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-0">
+                    <a href="../privacy-policy.html" class="hover:underline cursor-pointer">Privacy Policy</a>
+                    <span class="hidden sm:inline">|</span>
+                    <a href="../terms-and-conditions.html" class="hover:underline cursor-pointer">Terms and
+                        Conditions</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 Shri Swami Bhumanand Hospital. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init({
+        duration: 800,
+        once: true,
+    });
+</script>
+
+<script>
+    $(document).ready(function () {
+        let slider = $('#patientSlider');
+        let dots = $('.patientDot');
+        slider.slick({
+            infinite: true,
+            slidesToShow: 3,
+            slidesToScroll: 1,
+            arrows: false,
+            dots: false,
+            centerMode: false,
+            variableWidth: false,
+            responsive: [
+                { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                { breakpoint: 768, settings: { slidesToShow: 1, centerMode: false } }
+            ]
+        });
+        dots.click(function () {
+            let slideType = $(this).data('slide');
+
+            if (slideType === "prev") slider.slick('slickPrev');
+            else if (slideType === "next") slider.slick('slickNext');
+            else slider.slick('slickGoTo', 0);
+
+            dots.removeClass('active');
+            $(this).addClass('active');
+        });
+        $('#prevArrow').click(function () {
+            slider.slick('slickPrev');
+        });
+
+        $('#nextArrow').click(function () {
+            slider.slick('slickNext');
+        });
+    });
+</script>
+<script src="../assets/js/header.js"></script>
+
+<script>
+    // Mobile menu toggle script (assuming it's here or in header.js)
+    document.addEventListener('DOMContentLoaded', () => {
+       
+
+        // Doctor Search Functionality
+        const searchInput = document.getElementById('doctorSearchInput');
+        const doctorCards = document.querySelectorAll('section.px-5.py-16 a.doctorCard'); // Corrected selector
+
+        if (searchInput && doctorCards.length > 0) {
+            searchInput.addEventListener('input', function() {
+                const searchTerm = this.value.toLowerCase().trim();
+
+                doctorCards.forEach(card => {
+                    const doctorNameElement = card.querySelector('h2.doctorsName');
+                    if (doctorNameElement) {
+                        const doctorName = doctorNameElement.textContent.toLowerCase();
+                        if (doctorName.includes(searchTerm)) {
+                            card.style.display = 'flex'; // Ensure it's visible as a flex item
+                        } else {
+                            card.style.display = 'none';
+                        }
+                    }
+                });
+            });
+        }
+    });
+</script>
+
+</html>

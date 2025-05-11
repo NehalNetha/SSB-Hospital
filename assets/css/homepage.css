@@ -1,0 +1,577 @@
+@font-face {
+    font-family: "Roboto-SemiBold.ttf";
+    src: url('../fonts/roboto/static/Roboto-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url('../fonts/roboto/static/Roboto-Medium.ttf');
+}
+
+body {
+    background: #FCF0E9;
+}
+
+.navbarAppointmentButton {
+    border-radius: 22.846px;
+    border: 1px solid #FC6A1F;
+    display: inline-flex;
+    padding: 15px 36px;
+    justify-content: center;
+    align-items: center;
+    gap: 12.184px;
+}
+
+.navbarAppointmentButtonText {
+    color: #FC6A1F;
+    font-size: 18px;
+    font-family: "Roboto-Medium.ttf";
+    font-weight: 500;
+    line-height: normal;
+}
+
+.heroBannerHeading {
+    color: #FFF;
+    text-align: center;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.40);
+    font-family: "Roboto-SemiBold.ttf";
+    font-weight: 600;
+}
+
+.ourServiceSection {
+    border-radius: 16px;
+    background: #FFF;
+}
+
+.whyChooseUsSection {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 11px 2px rgba(62, 64, 149, 0.25);
+}
+
+.homepageSectionTitle {
+    color: #161861;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.whyChooseUsSubTitle {
+    color: #3E4095;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.departmentSection {
+    padding: 10px 80px 64px 32px;
+    background-color: #FFF;
+}
+
+.ourDepartmentTitle {
+    color: #37395F;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    padding-top: 46px;
+}
+
+.departmentHeading {
+    color: #37395F;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.departmentDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px; 
+}
+
+#departmentSliderContainer {
+    max-width: 100%;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+#departmentSlider {
+    display: flex;
+    gap: 8px;
+}
+
+#departmentSlider .departmentCard {
+    width: calc(100% / 3 - 16px);
+    margin: 0px 8px;
+    box-sizing: border-box;
+}
+
+.departmentDot {
+    background: rgba(0, 0, 0, 0.50);
+    width: 40px;
+    height: 3px;
+    margin: 0 8px;
+    cursor: pointer;
+}
+
+.departmentDot.active {
+    background: #FC6A1F;
+}
+
+.commonHomepageDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.meetOurDoctorsSection {
+    background: #002C5B;
+    border-radius: 12px;
+}
+
+.doctorDesignation {
+    color: #37395F;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorsName {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorSliderContainer {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.doctorSlider {
+    display: flex;
+    gap: 12px;
+}
+
+.doctorSlider .doctorCard {
+    width: calc(100% / 3 - 12px);
+    margin: 0px 28px;
+    box-sizing: border-box;
+}
+
+.doctorDot {
+    background: rgba(255, 255, 255, 0.62);
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.doctorDot.active {
+    background: rgba(255, 255, 255, 1);
+}
+
+.exploreOurHealthcare {
+    background: #FC6A1F;
+}
+
+.blushPink {
+    background: #FCEDEC;
+}
+
+.yaleBlue {
+    background: #194069;
+}
+
+.emergencyHeading {
+    color: #FC6A1F;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.emergencyNumber {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+
+.hospitalHeading {
+    color: #FFF;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.hospitalAddress {
+    color: #FFF;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.4;
+}
+
+.homepageAboutOurHeading {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.ourHospitalDescription {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.exploreOurHealthcareDescription {
+    color: #FFF;
+    font-family: "Roboto-Medium.ttf";
+    font-style: normal;
+    font-weight: 400;
+}
+
+.commonBlueButton {
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 30px;
+    background: #002C5B;
+}
+
+.commonOrangeButton {
+    display: inline-flex;
+    padding: 10px 20px;
+    gap: 10px;
+    border-radius: 30px;
+    background: #FC6A1F;
+}
+
+.exploreMore {
+    display: inline-flex;
+    padding: 8px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 30px;
+    border: 1px solid #002C5B;
+}
+
+.exploreMoreButton {
+    color: #FC6A1F;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.commonButtonContent {
+    color: #FFF;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.commonButtonBlueContent {
+    color: #3E4095;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.homepageAboutOurDescription {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+}
+
+.website-logo-heading {
+    color: #3E4095;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.patientCard {
+    border-radius: 16px;
+    background: #FFF;
+    padding: 20px;
+}
+
+.patientName {
+    color: #3E4095;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.patientCity {
+    color: #3E4095;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+#patientSliderContainer {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#patientSlider {
+    display: flex;
+    gap: 12px;  
+}
+
+#patientSlider .patientCard {
+    width: calc(100% / 3 - 16px);
+    margin: 0px 8px;
+    box-sizing: border-box;
+}
+
+.patientDot {
+    background: rgba(66, 66, 66, 0.62);
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.patientDot.active {
+    background: #424242;
+}
+
+.sliderArrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(50%);
+    color: white;
+    cursor: pointer;
+    font-size: 24px;
+    z-index: 10;
+}
+
+.sliderArrow.left-0 {
+    left: 40px;
+    top: 125px;
+}
+
+.sliderArrow.right-0 {
+    right: 40px;
+    top: 125px;
+}
+
+.journalTitle {
+    font-family: "Roboto-Medium.ttf";
+    color: #5A5B7A;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: -.005em;
+    line-height: 1.45;
+    text-align: left;
+}
+
+.journal {
+    overflow: hidden;
+    position: relative;
+}
+
+.journal img {
+    transition: transform 0.4s ease, box-shadow 0.4s ease, filter 0.4s ease;
+    display: block;
+    width: 100%;
+    border-radius: 12px;
+    height: auto;
+}
+
+.journal:hover img {
+    transform: scale(1.1) translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    filter: brightness(1.1);
+}
+
+@media (min-width: 640px) {
+    .commonBlueButton {
+        padding: 15px 30px;
+        gap: 12px;
+    }
+    
+    .commonOrangeButton {
+        padding: 15px 30px;
+        gap: 12px;
+    }
+
+    .commonButtonContent {
+        font-size: 16px;
+    }
+    .meetOurDoctorsSection {
+        border-radius: 0px;
+    }
+    .ourDepartmentTitle {
+        font-size: 40px;
+    }
+    .doctorSlider .doctorCard {
+        width: calc(100% / 3 - 12px);
+        margin: 0px 8px;
+    }
+    .doctorsName {
+        font-size: 24px;
+    }
+    .doctorDesignation {
+        font-size: 18px;
+    }
+    .homepageSectionTitle {
+        font-size: 40px;
+    }
+    .footer-section {
+        margin-bottom: 0;
+    }
+    .emergencyHeading {
+        font-size: 28px;
+    }
+    .emergencyNumber {
+        font-size: 32px;
+    }
+    .hospitalHeading {
+        font-size: 22px;
+    }
+    .hospitalAddress {
+        font-size: 18px;
+    }
+}
+@media (min-width: 768px) {
+    .commonBlueButton {
+        padding: 20px 40px;
+        gap: 16px;
+    }
+    
+    .commonOrangeButton {
+        padding: 20px 40px;
+        gap: 16px;
+    }
+
+    .commonButtonContent {
+        font-size: 18px;
+    }
+    .meetOurDoctorsSection {
+        border-radius: 0px;
+    }
+    .ourDepartmentTitle {
+        font-size: 56px;
+        color: #FFF;
+    }
+    #departmentSliderContainer {
+        background-image: url(../images/homepage/departments-banner.png);
+    }
+    .departmentSection {
+        padding: 24px 40px 48px 30px;
+    }
+    .departmentHeading {
+        font-size: 18px;
+    }
+    .departmentDescription {
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .departmentDot {
+        width: 40px;
+        margin: 0 8px;
+    }
+    .doctorSlider .doctorCard {
+        width: calc(100% / 3 - 12px);
+        margin: 0px 8px;
+    }
+    .doctorsName {
+        font-size: 24px;
+    }
+    .doctorDesignation {
+        font-size: 18px;
+    }
+    .homepageSectionTitle {
+        font-size: 44px;
+    }
+    .emergencyHeading {
+        font-size: 32px;
+    }
+    .emergencyNumber {
+        font-size: 40px;
+    }
+    .hospitalHeading {
+        font-size: 26px;
+    }
+    .hospitalAddress {
+        font-size: 22px;
+        line-height: normal;
+    }
+}
+@media (min-width: 1024px) {
+    .departmentSection {
+        padding: 10px 60px 64px 32px;
+    }
+    .homepageSectionTitle {
+        font-size: 56px;
+    }
+    .exploreOurHealthcareDescription {
+    }
+}
+@media (min-width: 1280px) {
+    .heroBannerHeading {
+        font-size: 72px;
+    }
+}
+@media (min-width: 1536px) { 
+
+}
+

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/homepage.css">
+    <link rel="stylesheet" href="../assets/css/services.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Shri Swami Bhumanand Hospital | Services Page</title>
+</head>
+
+<body>
+    <header class="bg-[#FCF0E9] shadow-md py-2 md:py-0 relative">
+        <section class="flex items-center justify-between lg:justify-start px-4 lg:px-0 relative z-[60]">
+            <a href="./index.html" class="flex items-center no-underline text-inherit lg:w-1/3 lg:px-4">
+                <img src="./assets/images/icons/website-logo.svg" alt="Website Logo" class="mr-2 h-16 md:h-20 lg:mr-4">
+                <h1 class="website-logo-heading text-xl md:text-2xl lg:text-3xl py-1">Shri Swami Bhumanand Hospital</h1>
+            </a>
+
+            <div class="hidden lg:block lg:w-2/3">
+                <nav>
+                    <div class="w-full flex justify-end exploreOurHealthcare px-14 py-5 gap-x-10">
+                        <a href="#" class="commonButtonContent">Patient Care</a>
+                        <a href="./facilities.html" class="commonButtonContent">Facilities</a>
+                        <a href="./health-resources/index.html" class="commonButtonContent">Health Resources</a>
+                        <a href="./contact.html" class="commonButtonContent">Contact Us</a>
+                    </div>
+                    <div class="w-full flex justify-end items-center px-4 py-4 gap-x-6">
+                        <a href="../index.html" class="commonButtonBlueContent">Home</a>
+                        <a href="../about.html" class="commonButtonBlueContent">About Us</a>
+                        <a href="../services/index.html" class="commonButtonBlueContent">Medical Services</a>
+                        <a href="../doctors/index.html" class="commonButtonBlueContent">Doctors</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                            class="commonButtonBlueContent navbarAppointmentButton flex items-center gap-x-3">
+                            <i class="fa-solid fa-calendar-days" style="color: #FC6A1F;"></i>
+                            <span class="navbarAppointmentButtonText">Book an Appointment</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-[#3E4095] hover:text-[#FC6A1F] focus:outline-none p-2">
+                    <i class="fas fa-bars text-3xl"></i>
+                </button>
+            </div>
+        </section>
+
+        <nav id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white mt-[5rem] shadow-lg z-50 overflow-y-auto">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Patient Care</a>
+                <a href="./facilities.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Facilities</a>
+                <a href="./health-resources/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Health Resources</a>
+                <a href="./contact.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Contact Us</a>
+                <hr class="my-2">
+                <a href="../index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Home</a>
+                <a href="../about.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">About Us</a>
+                <a href="../services/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Medical Services</a>
+                <a href="../doctors/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Doctors</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                    class="block py-2 px-3 border border-orange-500 mt-11 rounded-md text-orange-500 hover:bg-orange-500 hover:text-white flex items-center gap-x-2 justify-center mt-2">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Book an Appointment</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- About Us Section -->
+        <section class="full">
+            <div
+                class="bg-[url('../assets/images/services/services-background.png')] bg-cover bg-center rounded-xl overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1">
+                    <div class="flex justify-center" data-aos="fade-down">
+                        <h2 class="serviceUsHeading md:mt-14 mt-3 mb-4 text-center">Facilities</h2>
+                    </div>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 px-4 pb-11 md:pb-0 md:px-0">
+                    <div class="flex justify-end" data-aos="fade-right" data-aos-delay="100">
+                        <img src="./assets/images/facilities/ambulance.png" alt="" class="rounded-t-xl md:rounded-tl-xl">
+                    </div>
+                    <div class="flex justify-start" data-aos="fade-left" data-aos-delay="200">
+                        <img src="./assets/images/facilities/chemist.png" alt="" class="rounded-tr-xl">
+                    </div>
+                </div>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 pt-4 px-4 md:pt-0 md:px-0">
+                <div class="flex justify-end rounded-br-xl" data-aos="fade-right" data-aos-delay="300">
+                    <img src="./assets/images/facilities/labs.png" alt="" class="rounded-t-xl md:rounded-br-xl">
+                </div>
+                <div class="flex justify-start rounded-bl-xl" data-aos="fade-left" data-aos-delay="400">
+                    <img src="./assets/images/facilities/hospitalbed.png" alt="" class="rounded-b-xl md:rounded-bl-xl">
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Services Section  -->
+
+        <section class="grid grid-cols-1 md:grid-cols-1 lg:grid-cols-1 px-5 md:px-9 pt-8 md:pt-20">
+            <div class="flex justify-center yaleBlue rounded-xl" data-aos="zoom-in">
+                <h2 class="serviceUsHeading text-center py-6">Facilities</h2>
+            </div>
+        </section>
+
+        <section class="md:px-9 px-5 py-16">
+            <div class="w-full">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="100">
+                        <img src="./assets/images/facilities/anytime-emergency.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">24×7 Emergency</h2>
+                        <p class="serviceDescription">Our 24×7 emergency service provides immediate, life-saving medical care for accidents, trauma, and critical health conditions with rapid diagnosis, expert staff, and advanced equipment available around the clock.</p>
+                    </div>                                      
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="150">
+                        <img src="./assets/images/facilities/cath-lab.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Cath Labs</h2>
+                        <p class="serviceDescription">Cath Labs are specialized facilities equipped for advanced cardiac procedures, including angioplasty and stenting, enabling accurate diagnosis and minimally invasive treatment of heart diseases using real-time imaging and catheter-based technology.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/images/facilities/modular-ot.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Modular OTs</h2>
+                        <p class="serviceDescription">Modular operation theaters offer state-of-the-art, sterile environments designed for complex surgeries, integrating advanced technology and infection control measures to ensure maximum safety, precision, and efficiency during surgical procedures.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="250">
+                        <img src="./assets/images/facilities/bronchoscopy.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Bronchoscopy</h2>
+                        <p class="serviceDescription">Bronchoscopy is a diagnostic and therapeutic procedure that uses a thin tube with a camera to examine the airways and lungs, detect abnormalities, collect samples, and treat certain respiratory conditions.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="300">
+                        <img src="./assets/images/facilities/endoscopy.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Endoscopy</h2>
+                        <p class="serviceDescription">Endoscopy is a minimally invasive procedure using a flexible tube with a camera to visualize the gastrointestinal tract, diagnose digestive disorders, and perform treatments like biopsies, polyp removal, and bleeding control.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="350">
+                        <img src="./assets/images/facilities/dialysis.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Dialysis</h2>
+                        <p class="serviceDescription">Dialysis is a critical treatment for patients with kidney failure, removing waste, excess fluids, and toxins from the blood using advanced equipment, ensuring better health and improved quality of life.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="400">
+                        <img src="./assets/images/facilities/anytime-pharmacy.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">24×7 Pharmacies</h2>
+                        <p class="serviceDescription">Our 24×7 pharmacies ensure uninterrupted access to essential medicines and emergency drugs, supporting continuous patient care and safety with expert pharmacists and computerized inventory systems for accurate dispensing.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="450">
+                        <img src="./assets/images/facilities/amenities.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">Rooms with Modern Amenities</h2>
+                        <p class="serviceDescription">Our hospital rooms offer comfort and care with modern amenities, including air-conditioning, entertainment, nurse call systems, and hygienic interiors, designed to support a peaceful, healing environment for all patients.</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center md:items-start md:text-left rounded-2xl bg-white p-10 hover:shadow-2xl hover:-translate-y-2 hover:scale-[1.02] transition-all duration-300 ease-out" data-aos="fade-up" data-aos-delay="500">
+                        <img src="./assets/images/facilities/anytime-ambulance.svg" alt="" class="size-10">
+                        <h2 class="pt-6 pb-6 serviceNameHeading">24×7 Ambulance Service</h2>
+                        <p class="serviceDescription">Available 24×7, our ambulance service ensures rapid response with GPS-equipped vehicles, trained paramedics, and advanced life-support systems, providing critical care and safe transportation during medical emergencies.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+
+    <footer class="bg-[#003D7A] text-white pt-20 pb-8">
+        <div class="w-full px-4 sm:px-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Shri Swami Bhumanand Hospital</h3>
+                    <p class="mb-4 leading-relaxed text-[#FCF0E9]">
+                        Rishikesh - Badrinath Rd, near AIIMS Rishikesh,<br />
+                        Shivaji Nagar, Rishikesh, Uttarakhand 249203
+                    </p>
+                    <div class="flex items-center mb-2 text-[#FCF0E9]">
+                        <i class="fas fa-phone-alt mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">+91 84494 49955</span>
+                    </div>
+                    <div class="flex items-center text-[#FCF0E9]">
+                        <i class="fas fa-envelope mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">info@bhumanand.org</span>
+                    </div>
+                </div>
+                <div class="footer-section sm:px-12 lg:px-24">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Quick Links</h3>
+                    <ul class="space-y-2 text-[#E0E0E0]">
+                        <li><a href="./index.html" class="hover:text-orange-300 transition duration-200">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-orange-300 transition duration-200">About Us</a>
+                        </li>
+                        <li><a href="./services/index.html" class="hover:text-orange-300 transition duration-200">Our
+                                Services</a></li>
+                        <li><a href="./doctors/index.html"
+                                class="hover:text-orange-300 transition duration-200">Doctors</a></li>
+                        <li><a href="./contact.html" class="hover:text-orange-300 transition duration-200">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section sm:px-5 lg:px-10">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Offerings</h3>
+                    <ul class="space-y-2 text-[#FCF0E9]">
+                        <li><a href="./services/cardiology.html"
+                                class="hover:text-orange-300 transition duration-200">Cardiology</a></li>
+                        <li><a href="./services/neurology.html"
+                                class="hover:text-orange-300 transition duration-200">Neurology</a></li>
+                        <li><a href="./services/orthopedics.html"
+                                class="hover:text-orange-300 transition duration-200">Orthopedics</a></li>
+                        <li><a href="./services/gastroenterology.html"
+                                class="hover:text-orange-300 transition duration-200">Gastroenterology</a></li>
+                        <li><a href="./services/gynecology.html"
+                                class="hover:text-orange-300 transition duration-200">Gynecology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4 text-[#FCF0E9]">
+                        <a href="https://www.facebook.com/SSBHospital?rdid=Oc79kSO64vpcgUFf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jAcdRq1s%2F#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ssb_hospital/?igsh=cW9ocWQ1bXpuemRh#" class="text-2xl hover:text-orange-300 transition duration-200">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@bhumanandhospital" class="text-2xl hover:text-orange-300 transition duration-200">
+                                <i class="fab fa-youtube"></i>
+                        </a>
+                                
+                    </div>
+                    <p class="mb-2 text-gray-200 text-[#FCF0E9]">Subscribe to our newsletter for updates</p>
+                    <div class="mt-6 flex text-[#FCF0E9]">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 w-full text-gray-800 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-md transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-16 pt-4 px-4 sm:px-6 text-sm text-[#FCF0E9]">
+            <div class="flex flex-col sm:flex-row justify-between items-center w-full sm:px-20 text-center sm:text-left">
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-0">
+                    <a href="./privacy-policy.html" class="hover:underline cursor-pointer">Privacy Policy</a>
+                    <span class="hidden sm:inline">|</span>
+                    <a href="./terms-and-conditions.html" class="hover:underline cursor-pointer">Terms and
+                        Conditions</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 Shri Swami Bhumanand Hospital. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const body = document.body;
+
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        body.style.overflow = 'hidden';
+                    } else {
+                        body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

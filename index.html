@@ -1,0 +1,1194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/header.css">
+    <link rel="stylesheet" href="./assets/css/homepage.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Shri Swami Bhumanand Hospital | Homepage</title>
+</head>
+
+<body>
+    <header class="bg-[#FCF0E9] shadow-md py-2 md:py-0 relative">
+        <section class="flex items-center justify-between lg:justify-start px-4 lg:px-0 relative z-[60]">
+            <a href="./index.html" class="flex items-center no-underline text-inherit lg:w-1/3 lg:px-4">
+                <img src="./assets/images/icons/website-logo.svg" alt="Website Logo" class="mr-2 h-16 md:h-20 lg:mr-4">
+                <h1 class="website-logo-heading text-xl md:text-2xl lg:text-3xl py-1">Shri Swami Bhumanand Hospital</h1>
+            </a>
+
+            <div class="hidden lg:block lg:w-2/3">
+                <nav>
+                    <div class="w-full flex justify-end exploreOurHealthcare px-14 py-5 gap-x-10">
+                        <a href="#" class="commonButtonContent">Patient Care</a>
+                        <a href="./facilities.html" class="commonButtonContent">Facilities</a>
+                        <a href="./health-resources/index.html" class="commonButtonContent">Health Resources</a>
+                        <a href="./contact.html" class="commonButtonContent">Contact Us</a>
+                    </div>
+                    <div class="w-full flex justify-end items-center px-4 py-4 gap-x-6">
+                        <a href="../index.html" class="commonButtonBlueContent">Home</a>
+                        <a href="../about.html" class="commonButtonBlueContent">About Us</a>
+                        <a href="../services/index.html" class="commonButtonBlueContent">Medical Services</a>
+                        <a href="../doctors/index.html" class="commonButtonBlueContent">Doctors</a>
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                            class="commonButtonBlueContent navbarAppointmentButton flex items-center gap-x-3">
+                            <i class="fa-solid fa-calendar-days" style="color: #FC6A1F;"></i>
+                            <span class="navbarAppointmentButtonText">Book an Appointment</span>
+                        </a>
+                    </div>
+                </nav>
+            </div>
+
+            <div class="lg:hidden">
+                <button id="mobile-menu-button" class="text-[#3E4095] hover:text-[#FC6A1F] focus:outline-none p-2">
+                    <i class="fas fa-bars text-3xl"></i>
+                </button>
+            </div>
+        </section>
+
+        <nav id="mobile-menu" class="hidden lg:hidden fixed inset-0 bg-white mt-[5rem] shadow-lg z-50 overflow-y-auto">
+            <div class="flex flex-col p-4 space-y-2">
+                <a href="#" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Patient Care</a>
+                <a href="./facilities.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Facilities</a>
+                <a href="./health-resources/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Health Resources</a>
+                <a href="./contact.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-gray-700">Contact Us</a>
+                <hr class="my-2">
+                <a href="../index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Home</a>
+                <a href="../about.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">About Us</a>
+                <a href="../services/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Medical Services</a>
+                <a href="../doctors/index.html" class="block py-2 px-3 rounded hover:bg-gray-100 text-blue-700">Doctors</a>
+                <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                    class="block py-2 px-3 border border-orange-500 mt-11 rounded-md text-orange-500 hover:bg-orange-500 hover:text-white flex items-center gap-x-2 justify-center mt-2">
+                    <i class="fa-solid fa-calendar-days"></i>
+                    <span>Book an Appointment</span>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--  Banner Section -->
+
+        <div class="relative h-[50vh] sm:h-[60vh] md:h-[65vh] lg:h-auto">
+            <video autoplay loop muted playsinline
+                 class="w-full h-full object-cover lg:h-auto lg:object-contain">
+                 <source src="assets/images/videos/Sequence01.mp4" type="video/mp4">
+                 Your browser does not support the video tag.
+            </video>
+            <div class="absolute inset-0  flex items-center justify-center text-center bg-black bg-opacity-20">
+                <div class="flex flex-col  px-2 sm:px-4 md:px-8 lg:px-24 xl:px-48 sm:py-4" data-aos="fade-up">
+                    <h1 class="text-xl sm:text-4xl md:text-5xl lg:text-6xl xl:text-[4.5rem] font-bold heroBannerHeading leading-snug lg:leading-normal">Healing with Compassion, Excellence, and Trust.</h1>
+                    <p class="exploreOurHealthcareDescription pt-2 sm:pt-2 md:pt-3 lg:pt-5 text-sm sm:text-base md:text-lg lg:text-xl leading-relaxed lg:leading-loose">At Shri Swami Bhumanand Hospital, we deliver
+                        compassionate, expert healthcare services across multiple specialties. From cardiology to
+                        maternity care, we're dedicated to serving your family with personalized treatment and
+                        state-of-the-art facilities.</p>
+                    <div class="pt-4 md:pb-8 sm:pt-5 md:pt-6 lg:pt-8 xl:pt-10 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="https://docs.google.com/forms/d/e/1FAIpQLSd9Z1XKDYs41gA0BbJuVSrs1prygnpehZB9-6dhpzjq90CIqA/viewform"
+                            class="commonBlueButton flex items-center sm:mr-0 lg:mr-9" data-aos="zoom-in" data-aos-delay="200">
+                            <i class="fa-solid fa-calendar-days" style="color: #ffffff;"></i>
+                            <span class="commonButtonContent">Book an Appointment</span>
+                        </a>
+                        <a href="./doctors/index.html" class="commonOrangeButton flex items-center sm:ml-0 lg:ml-0" data-aos="zoom-in" data-aos-delay="400">
+                            <i class="fa-solid fa-magnifying-glass mt-1" style="color: #ffffff;"></i>
+                            <span class="commonButtonContent">Find a Doctor</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Top Services Section -->
+
+        <section class="w-full px-5">
+            <div class="pb-16">
+                <div class="text-center pt-8 pb-8" data-aos="fade-up">
+                    <h1 class="homepageSectionTitle">Top Services</h1>
+                </div>
+                <div class="pb-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                        
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/cardiology.svg" alt="cardiology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Cardiology</h2>
+                            <p class="commonHomepageDescription">Providing expert cardiac care with advanced diagnostics and treatment, our cardiologists ensure optimal heart health through preventive strategies, early detection, and personalized management of cardiovascular conditions.</p>
+                            <div class="pt-10">
+                                <a href="./services/cardiology.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/neurology.svg" alt="neurology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Neurology</h2>
+                            <p class="commonHomepageDescription">Our neurologists diagnose and manage conditions of the brain, spine, and nervous system with clinical expertise and advanced imaging, ensuring precise treatment and support for neurological health.</p>
+                            <div class="pt-10">
+                                <a href="./services/neurology.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/gasteroenterology.svg" alt="gastroenterology-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Gastroenterology</h2>
+                            <p class="commonHomepageDescription">We diagnose and treat digestive disorders including liver, stomach, and intestinal issues with advanced endoscopy and personalized care, promoting digestive health and improving quality of life.</p>
+                            <div class="pt-10">
+                                <a href="./services/gastroenterology.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/urology.svg" alt="urology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Urology</h2>
+                            <p class="commonHomepageDescription">We provide expert care for urinary and male reproductive issues, offering diagnostics, minimally invasive procedures, and long-term management to restore function and improve patient quality of life.</p>
+                            <div class="pt-10">
+                                <a href="./services/urology.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/maxillofacial.svg" alt="maxillofacial-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Maxillofacial</h2>
+                            <p class="commonHomepageDescription">Treating facial trauma, jaw disorders, and oral conditions, our maxillofacial surgeons combine surgical skill with aesthetics to restore function, comfort, and appearance through expert, patient-centered care.</p>
+                            <div class="pt-10">
+                                <a href="./services/maxillofacial.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/general-surgery.svg" alt="general-surgery-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">General, Laparoscopic & Minimal Invasive Surgery
+                            </h2>
+                            <p class="commonHomepageDescription">Providing expert surgical care with a focus on precision and safety, our surgeons handle a variety of procedures to ensure optimal recovery, minimal complications, faster healing, and better long-term health outcomes.</p>
+                            <div class="pt-10">
+                                <a href="./services/general-surgery.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/general-medicine.svg" alt="internal-medicine-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">General Medicine, Respiratory & Chest Medicine </h2>
+                            <p class="commonHomepageDescription">Our internists specialize in diagnosing and managing adult health conditions, offering preventive care, chronic disease management, and coordinated treatment plans for long-term wellness and improved patient outcomes.</p>
+                            <div class="pt-10">
+                                <a href="./services/internal-medicine.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6" data-aos="fade-up" data-aos-delay="100">
+                            <img src="./assets/images/icons/orthopedic.svg" alt="orthopedics-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Orthopedics, Joint Replacement & Arthroscopic
+                                Surgery</h2>
+                            <p class="commonHomepageDescription">OrthopedicsFocused on bones, joints, and muscles, our orthopedic team provides surgical and non-surgical solutions for injuries and disorders, promoting mobility, pain relief, and faster rehabilitation.</p>
+                            <div class="pt-10">
+                                <a href="./services/orthopedics.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="pt-4 flex justify-center">
+                    <a href="./services/index.html" class="commonOrangeButton">
+                        <span class="commonButtonContent">View All Services</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+
+        <!-- Why Choose Us Section  -->
+
+        <section class="w-full px-4 md:px-5 lg:px-10">
+            <div class="whyChooseUsSection">
+                <div class="text-center pt-12 pb-16" data-aos="fade-up">
+                    <h1 class="homepageSectionTitle">Why Choose Us?</h1>
+                </div>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-20 lg:gap-40 px-6 md:px-12 lg:px-24 pb-28">
+                    <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left" data-aos="fade-right" data-aos-delay="100">
+                        <img src="./assets/images/icons/expert-specialists-icon.png" alt="expert-specialists-icon"
+                            class="size-28">
+                        <h2 class="whyChooseUsSubTitle py-2">Expert Specialists</h2>
+                        <p class="commonHomepageDescription">Our team consists of experienced doctors and surgeons from
+                            leading medical institutions. We are dedicated to providing the best possible care in each
+                            medical field.</p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left" data-aos="fade-up" data-aos-delay="200">
+                        <img src="./assets/images/icons/patient-centered-care-icon.png" alt="patient-centered-care-icon"
+                            class="size-28">
+                        <h2 class="whyChooseUsSubTitle py-2">Patient-Centered Care</h2>
+                        <p class="commonHomepageDescription">We understand the importance of individualized care. Our
+                            team ensures every patient feels heard, respected, and treated with personalized attention.
+                        </p>
+                    </div>
+                    <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left" data-aos="fade-left" data-aos-delay="300">
+                        <img src="./assets/images/icons/cutting-edge-technology-icon.png"
+                            alt="cutting-edge-technology-icon" class="size-28">
+                        <h2 class="whyChooseUsSubTitle py-2">Cutting-Edge Technology</h2>
+                        <p class="commonHomepageDescription">We use the latest medical technologies to provide accurate
+                            diagnoses and effective treatments. Our diagnostic and surgical equipment is modern and
+                            reliable.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Our Departments Section -->
+
+        <section class="py-10 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12">
+            <div id="departmentSliderContainer">
+                <h1 class="ourDepartmentTitle text-center pt-10 pb-12 sm:pt-12 sm:pb-14 md:pt-16 md:pb-16">Our Departments</h1>
+                <div id="departmentSlider" class="flex px-4 md:px-8 lg:px-12">
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/pediatrics-and-child-health.jpg" alt="Pediatrics & Child Health"
+                            class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Pediatrics & Child Health</h2>
+                            <p class="pt-4 departmentDescription">We care for children from infancy to adolescence,
+                                offering vaccinations, checkups, and treatment in a nurturing environment designed to
+                                support healthy growth and development at every stage.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/internal-medicine.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Internal Medicine</h2>
+                            <p class="pt-4 departmentDescription">Our internists specialize in diagnosing and managing adult health conditions, offering preventive care, chronic disease management, and coordinated treatment plans for long-term wellness and improved patient outcomes.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/gynecology.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Gynecology</h2>
+                            <p class="pt-4 departmentDescription">Offering comprehensive women's health services, our gynecology team addresses reproductive concerns, performs routine screenings, and provides treatment with compassion, confidentiality, and the latest medical advancements.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/dental-care.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Dental Care</h2>
+                            <p class="pt-4 departmentDescription">Our Dental Care department handles cleanings,
+                                fillings, and cosmetic procedures. We ensure healthy smiles through gentle, professional
+                                care for patients of all ages and oral health needs.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/general-surgery.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">General Surgery</h2>
+                            <p class="pt-4 departmentDescription">We perform a range of surgical procedures, from minor
+                                operations to complex treatments, using modern equipment and a patient-centered approach
+                                to ensure safe, precise outcomes.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/orthopedic.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Orthopedic</h2>
+                            <p class="pt-4 departmentDescription">We provide expert care for bones, joints, and muscles.
+                                From fractures to arthritis and sports injuries, our goal is to restore mobility and
+                                improve your quality of life.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/ophthalmology.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Ophthalmology</h2>
+                            <p class="pt-4 departmentDescription">Our eye specialists provide routine exams, lens
+                                prescriptions, and surgical treatments including cataract removal and LASIK, ensuring
+                                clear vision and long-term eye health.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/x-ray.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">X-Ray</h2>
+                            <p class="pt-4 departmentDescription">Our imaging department offers digital X-rays, CT
+                                scans, ultrasounds, and Doppler tests, providing fast and accurate diagnostics to
+                                support effective medical decision-making.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/urology.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Urology</h2>
+                            <p class="pt-4 departmentDescription">We diagnose and treat urinary and male reproductive
+                                issues, offering care for kidney stones, prostate conditions, and infections using
+                                minimally invasive techniques for faster recovery.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/laboratory.jpg" alt="" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Laboratory</h2>
+                            <p class="pt-4 departmentDescription">Our modern lab performs essential diagnostic tests in
+                                biochemistry, microbiology, and hematology, providing accurate results to guide timely
+                                and effective patient care.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col justify-center departmentCard">
+                        <img src="./assets/images/departments/drug-store.jpg" alt="Drug Store" class="w-full h-auto">
+                        <div class="departmentSection rounded-b-2xl">
+                            <h2 class="departmentHeading">Drug Store</h2>
+                            <p class="pt-4 departmentDescription">Our pharmacy is open 24/7, supplying genuine medicines
+                                and health products. Knowledgeable pharmacists provide safe prescription guidance and
+                                support for every patient's needs.</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="flex justify-center mt-12">
+                    <span class="departmentDot" data-slide="prev"></span>
+                    <span class="departmentDot" data-slide="prev"></span>
+                    <span class="departmentDot active" data-slide="current"></span>
+                    <span class="departmentDot" data-slide="next"></span>
+                    <span class="departmentDot" data-slide="next"></span>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Our Hospital Emegacy Section -->
+
+        <section class="px-4 sm:px-6 md:px-10 pt-10 sm:pt-16 md:pt-20">
+            <div class="flex flex-col lg:flex-row gap-6 lg:gap-4">
+                <div class="flex flex-col sm:flex-row w-full lg:w-3/5 gap-4">
+                    <div class="flex flex-col justify-center w-full sm:w-3/5 bg-white rounded-2xl p-4 sm:p-6 text-center sm:text-left">
+                        <img src="./assets/images/icons/emergency.png" alt="Emergency Icon" class="size-16 sm:size-20 md:size-24 mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <h2 class="emergencyHeading pt-1 sm:pt-2">24x7 Emergency</h2>
+                        <p class="emergencyNumber pt-3 sm:pt-4 md:pt-6">+91-8449449955</p>
+                    </div>
+                    <div class="flex flex-col justify-center w-full sm:w-2/5 exploreOurHealthcare rounded-2xl p-4 sm:p-6 mt-4 sm:mt-0 text-center sm:text-left">
+                        <img src="./assets/images/icons/location-outlined.png" alt="Location Icon" class="size-16 sm:size-20 md:size-24 mb-3 sm:mb-4 mx-auto sm:mx-0">
+                        <h2 class="hospitalHeading pt-1 sm:pt-2">Shri Swami Bhumanand Hospital</h2>
+                        <p class="hospitalAddress pt-3 sm:pt-4 md:pt-6">NH-58, Ranipur Jhal Jwalapur Haridwar, Uttrakhand 249407</p>
+                    </div>
+                </div>
+                <div class="flex flex-col sm:flex-row w-full lg:w-2/5 gap-4 mt-6 lg:mt-0">
+                    <div class="w-full sm:w-1/2 flex flex-col gap-4">
+                        <div class="relative rounded-2xl overflow-hidden w-full">
+                            <img src="./assets/images/homepage/appointment-request-preview.png"
+                                alt="Request an Appointment Preview" class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-2 sm:p-3 md:p-5">
+                                <img src="./assets/images/icons/appointment-calender.png" alt="Appointment Calendar Icon"
+                                    class="size-10 sm:size-12 md:size-16">
+                                <p class="mt-2 sm:mt-3 md:mt-4 commonButtonContent">Request an Appointment</p>
+                            </div>
+                        </div>
+                        <div class="rounded-2xl overflow-hidden">
+                            <img src="./assets/images/homepage/happy-patients.png" alt="Happy Patients"
+                                class="w-full h-auto object-cover">
+                        </div>
+                    </div>
+                    <div class="w-full sm:w-1/2 flex flex-col gap-4 mt-4 sm:mt-0">
+                        <div class="rounded-2xl overflow-hidden">
+                            <img src="./assets/images/homepage/hospital-departments.png" alt="Hospital Departments Preview"
+                                class="w-full h-auto object-cover">
+                        </div>
+                        <div class="relative rounded-2xl overflow-hidden w-full">
+                            <img src="./assets/images/homepage/best-doctor-preview.png" alt="Find Best Doctor Preview"
+                                class="w-full h-full object-cover">
+                            <div class="absolute inset-0 flex flex-col items-center justify-center text-center p-2 sm:p-3 md:p-5">
+                                <img src="./assets/images/icons/healthicons-doctor-male-outline.png"
+                                    alt="Doctor Icon" class="size-8 sm:size-10 md:size-14">
+                                <p class="mt-2 sm:mt-3 md:mt-4 commonButtonContent">Find the Best Doctor</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Our Hospital Section -->
+
+        <section class="relative px-4 sm:px-6 md:px-10 py-8 sm:py-12 md:py-16">
+            <div class="relative">
+                <img src="./assets/images/homepage/about-our-hospital.png" alt="About Our Hospital"
+                    class="w-full h-auto block rounded-lg shadow-md md:shadow-none" data-aos="zoom-in">
+                <div class="mt-6 md:mt-0 md:absolute md:inset-0 md:flex md:items-end md:justify-end md:p-8">
+                    <div class="bg-white/90 md:bg-white/70 p-4 sm:p-6 rounded-lg shadow-xl md:shadow-lg w-full md:max-w-md text-left" data-aos="fade-left" data-aos-delay="200">
+                        <h2 class="homepageAboutOurHeading pb-4 sm:pb-6 md:pb-8">About Our Hospital</h2>
+                        <p class="ourHospitalDescription pb-2 sm:pb-3">
+                            Shri Swami Bhumanand Hospital (SSBH), established in 2009, is a premier 150-bed
+                            super-specialty healthcare institution located in Haridwar, Uttarakhand.
+                        </p>
+                        <p class="ourHospitalDescription pb-2 sm:pb-3">
+                            Founded by Anant Shri Vibhushit Swami Achyutanand Tirth Ji Maharaj, the hospital operates
+                            under the guiding principle: "Hospital is a Temple; Patient is God; and Doctor is Priest."
+                            This philosophy underscores our unwavering commitment to providing exceptional medical care
+                            to all individuals, especially the underprivileged.
+                        </p>
+                        <p class="ourHospitalDescription pb-2 sm:pb-3">
+                            Our hospital operates 24/7, providing round-the-clock emergency services, pharmacy access,
+                            and blood bank facilities to ensure comprehensive care at all times. We also offer 24/7
+                            ambulance services to facilitate prompt medical attention when needed.
+                        </p>
+                        <div class="pt-4 sm:pt-6 md:pt-10">
+                            <a href="./about.html" class="exploreMore">
+                                <span class="commonButtonBlueContent">
+                                    Know More <i class="fas fa-arrow-right ml-1 text-blue-600"></i>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Meet Our Doctors Section -->
+
+        <section class="pb-10">
+            <div class="meetOurDoctorsSection">
+                <div class="text-center pt-12 pb-16">
+                    <h1 class="ourDepartmentTitle text-white">Meet Our Medical Specialist</h1>
+                </div>
+                <div class="doctorSliderContainer" class="pb-10 px-9">
+                    <div class="doctorSlider flex">
+                        <a href="./doctors/dr-aditya-singh.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="../assets/images/doctors/Dr. Aditya Singh.png"
+                                    alt="Dr. Aditya Singh - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Aditya Singh</h2>
+                                <p class="doctorDesignation">Cranio Maxillo Fascial Surgeon</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-akash-jain.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="../assets/images/doctors/Dr. Akash Jain.png" alt="Dr. Akash Jain - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Akash Jain</h2>
+                                <p class="doctorDesignation">General & Laparoscopic Surgeon</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-ankit-goyal.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="../assets/images/doctors/Dr. Ankit Goyal.png" alt="Dr. Ankit Goyal - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Ankit Goyal</h2>
+                                <p class="doctorDesignation">E.N.T Surgeon</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-annu-agarwal.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="../assets/images/doctors/Dr. Annu Agarwal.png"
+                                    alt="Dr. Annu Agarwal - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Annu Agarwal</h2>
+                                <p class="doctorDesignation">Consultant Orthopaedic</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-anshul-gupta.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="../assets/images/doctors/Dr. Anshul Gupta.png"
+                                    alt="Dr. Anshul Gupta - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Anshul Gupta</h2>
+                                <p class="doctorDesignation">Gynaecologist</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-kunal-kumar.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Kunal Kumar.png" alt="Dr. Kunal Kumar - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Kunal Kumar</h2>
+                                <p class="doctorDesignation">Pulmonologist</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-nitin-verma.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Nitin Verma.png" alt="Dr. Nitin Verma - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Nitin Verma</h2>
+                                <p class="doctorDesignation">General Physician</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-nitish-saini.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Nitish Saini.png"
+                                    alt="Dr. Nitish Saini - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Nitish Saini</h2>
+                                <p class="doctorDesignation">Anaesthetist</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-rs-prasad.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. R S Prasad.png" alt="Dr. R S Prasad - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. R S Prasad</h2>
+                                <p class="doctorDesignation">General Surgeon</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-ravindra-pandey.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Ravindra Pandey.png"
+                                    alt="Dr. Ravindra Pandey - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Ravindra Pandey</h2>
+                                <p class="doctorDesignation">Radiologist</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-richa-jain.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Richa Jain.png" alt="Dr. Richa Jain - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Richa Jain</h2>
+                                <p class="doctorDesignation">Dentist</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-saloni-bassi-masson.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Saloni Bassi Masson.png"
+                                    alt="Dr. Saloni Bassi Masson - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Saloni Bassi Masson</h2>
+                                <p class="doctorDesignation">Paediatrician</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-sargam-sharma.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Sargam Sharma.png"
+                                    alt="Dr. Sargam Sharma - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Sargam Sharma</h2>
+                                <p class="doctorDesignation">Dietician</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-saurabh-tripathi.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Saurabh Tripathi.png"
+                                    alt="Dr. Saurabh Tripathi - Surgeon"
+                                    class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Saurabh Tripathi</h2>
+                                <p class="doctorDesignation">Paediatrician</p>
+                            </div>
+                        </a>
+                        <a href="./doctors/dr-suman-semwal.html"
+                            class="flex flex-col items-center text-center w-full doctorCard">
+                            <div class="flex justify-center w-full bg-white rounded-t-lg">
+                                <img src="assets/images/doctors/Dr. Suman Semwal.png"
+                                    alt="Dr. Suman Semwal - Surgeon" class="size-64 sm:size-96 lg:size-80 xl:size-96">
+                            </div>
+                            <div class="w-full blushPink py-6 rounded-b-lg">
+                                <h2 class="doctorsName pb-2">Dr. Suman Semwal</h2>
+                                <p class="doctorDesignation">Physitherapist</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="flex justify-center mt-10">
+                        <span class="doctorDot" data-slide="prev"></span>
+                        <span class="doctorDot active" data-slide="current"></span>
+                        <span class="doctorDot" data-slide="next"></span>
+                    </div>
+                </div>
+                <div class="py-14 flex justify-center">
+                    <a href="./doctors/index.html" class="commonOrangeButton">
+                        <span class="commonButtonContent">View All Doctors</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Top Services Section -->
+
+        <section class="w-full px-5">
+            <div class="pb-8">
+                <div class="text-center pb-8">
+                    <h1 class="homepageSectionTitle">Diagnostic services</h1>
+                </div>
+                <div class="pb-10">
+                    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-3">
+                        <!-- Service Card Start -->
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/pathology.svg" alt="pathology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Pathology</h2>
+                            <p class="commonHomepageDescription">Accurate lab testing and diagnostics form the backbone of medical decisions. Our pathology department ensures timely, reliable results that support effective treatment planning and patient care.</p>
+                            <div class="pt-10">
+                                <a href="./services/pathology.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <!-- Repeat Below Pattern for Each Card -->
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/ct-scan.svg" alt="neurology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">CT-Scan</h2>
+                            <p class="commonHomepageDescription">CT scans use X-ray technology and computer processing to create detailed cross-sectional images of the body for accurate diagnosis and treatment planning.</p>
+                            <div class="pt-10">
+                                <a href="./services/ct-scan.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/x-ray.svg" alt="gastroenterology-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">X-ray</h2>
+                            <p class="commonHomepageDescription">Fast, efficient imaging for bones, lungs, and other areas, X-rays help detect fractures, infections, and abnormalities, serving as a crucial tool for accurate diagnosis and treatment planning.</p>
+                            <div class="pt-10">
+                                <a href="./services/x-ray.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/ultrasound.svg" alt="urology-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Ultrasound</h2>
+                            <p class="commonHomepageDescription">We provide expert care for urinary and male reproductive issues, offering diagnostics, minimally invasive procedures, and long-term management to restore function and improve patient quality of life with dignity and discretion.</p>
+                            <div class="pt-10">
+                                <a href="./services/ultrasound.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/mri.svg" alt="maxillofacial-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">MRI</h2>
+                            <p class="commonHomepageDescription">MRI offers detailed imaging of internal organs, joints, and tissues without radiation exposure, assisting physicians in diagnosing conditions accurately and planning effective, non-invasive treatments.</p>
+                            <div class="pt-16">
+                                <a href="./services/mri.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/TMT.svg" alt="general-surgery-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">TMT</h2>
+                            <p class="commonHomepageDescription">Treadmill testing helps assess heart response to physical stress, aiding in the diagnosis of coronary artery disease and guiding cardiovascular treatment with non-invasive precision.</p>
+                            <div class="pt-10">
+                                <a href="./services/tmt.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/echo.svg" alt="internal-medicine-icon"
+                                class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Echo</h2>
+                            <p class="commonHomepageDescription">Echo uses ultrasound waves to visualize heart structure and function in real time, assessing blood flow, valve function, and cardiac health non-invasively.</p>
+                            <div class="pt-10">
+                                <a href="./services/echo.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="flex flex-col justify-center items-center text-center md:items-start md:text-left ourServiceSection py-6 px-6">
+                            <img src="./assets/images/icons/emergency-services.svg" alt="orthopedics-icon" class="size-10">
+                            <h2 class="whyChooseUsSubTitle pt-6 pb-4">Emergency Service</h2>
+                            <p class="commonHomepageDescription">Available 24/7, our emergency team offers immediate care for critical injuries, trauma, and acute illnesses, ensuring rapid diagnosis, stabilization, and life-saving treatment for patients in urgent need.</p>
+                            <div class="pt-10">
+                                <a href="./services/emergancy.html" class="exploreMore">
+                                    <span class="exploreMoreButton">
+                                        View more <i class="fas fa-arrow-right ml-1 text-orange"></i>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- testimonials Articles Section -->
+
+        <section class="w-full">
+            <div class="text-center pt-6 pb-10 sm:pt-10 sm:pb-20">
+                <h1 class="homepageSectionTitle">What Our Patients Say?</h1>
+            </div>
+            <div id="patientSliderContainer">
+                <div class="relative">
+                    <button id="prevArrow" class="sliderArrow left-0 hidden sm:block"><i class="fa-solid fa-arrow-left"
+                            style="color: #8e8fad;"></i></button>
+                    <button id="nextArrow" class="sliderArrow right-0 hidden sm:block"><i class="fa-solid fa-arrow-right"
+                            style="color: #8e8fad;"></i></button>
+                </div>
+                <div id="patientSlider" class="flex px-4 md:px-8 lg:px-20">
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="./assets/images/patients/rajan-bhardwaj.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Rajan Bhardwaj</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">It's most valuable hospital & many many type of facilities for
+                                every patents like easily provide treatment by staff without any small problems
+                                comparison to other hospital management.</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-2 md:pt-12">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="./assets/images/patients/arvind-kumar.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Arvind Kumar</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pr-11">I got my wife treated by Dr. Ram Shankar Prasad ji. Currently, all the
+                                doctors and staff are good. Thank you.</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-24">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="./assets/images/patients/sohit-thakur.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Sohit Thakur</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pr-11 pb-2">Hamara baby bahot sick tha preterm tha. NICU me admit hua. Dr
+                                Saurabh Tripathi aur NICU ke staff ki mehnat se thik ho gaya. Staff bahot hi caring tha.
+                                Thank you.</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-16">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="./assets/images/patients/arish-abbasi.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Arish Abbasi</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">Bhumanad ek no hospital hai or yaha ke dr bhi bhot best hai or
+                                staf ka nature kafi acha hai wese Mera naam mukul Sharma hai mene apni beti ko dr
+                                saurabh tripathi ji ko dikhaya tha unhone bhot ache se treatment Kiya or bhumanand me
+                                facility Jada h yaha hai</p>
+                        </div>
+                        <div class="flex gap-x-1 pt-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                    <div class="patientCard">
+                        <div class="flex items-center">
+                            <img src="./assets/images/patients/naitik-churkhandi.png" alt="Patient Image"
+                                class="size-14 rounded-full">
+                            <div class="flex flex-col justify-center px-4">
+                                <h2 class="patientName">Naitik Churkhandi</h2>
+                            </div>
+                        </div>
+                        <div class="flex flex-col">
+                            <p class="pt-4 pb-6 pr-11">I had come to visit Haridwar, here my friend needed dialysis, we
+                                came here to this hospital, I was surprised to see the facilities of the hospital and
+                                the cooperation of the dialysis staff. The knowledge and behavior of the doctors as well
+                                as the senior dialysis staff is like nothing I have ever seen before.</p>
+                        </div>
+                        <div class="flex gap-x-1">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                            <img src="./assets/images/icons/star.svg" alt="Star" class="size-6">
+                        </div>
+                    </div>
+                </div>
+                <div class="flex justify-center mt-10">
+                    <span class="patientDot" data-slide="prev"></span>
+                    <span class="patientDot active" data-slide="current"></span>
+                    <span class="patientDot" data-slide="next"></span>
+                </div>
+            </div>
+        </section>
+
+     <!-- Latest Articles Section -->
+
+
+        <section class="w-full px-4 sm:px-6 md:px-10 lg:px-20">
+            <div class="text-center pt-10 pb-8 sm:pt-28 sm:pb-20">
+                <h1 class="homepageSectionTitle">Latest Articles</h1>
+            </div>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-11 md:gap-12">
+                <div class="journal flex flex-col">
+                    <a href="./blogs/भूमानंद-अस्पताल-के-कैथ-लै.html" class="block">
+                        <img src="./assets/images/blogs/emergancy-icu-ward.png" alt="NFT 4.0">
+                        <div class="p-0 sm:p-4">
+                            <h2 class="journalTitle pt-3 sm:pt-4">हरिद्वार में केरल के राज्यपाल, भूमानंद अस्पताल के कैथ
+                                लैब का किया उद्घाटन</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="journal flex flex-col">
+                    <a href="./blogs/birth-of-baby-with-asphyxia-and-meconium-aspiration-syndrome.html" class="block">
+                        <img src="./assets/images/blogs/aspiration-syndrome.png" alt="">
+                        <div class="p-0 sm:p-4">
+                            <h2 class="journalTitle pt-3 sm:pt-4">Birth of Baby with asphyxia and Meconium Aspiration
+                                Syndrome</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="journal flex flex-col">
+                    <a href="./blogs/preterm-baby.html" class="block">
+                        <img src="./assets/images/blogs/preterm-baby.png" alt="">
+                        <div class="p-0 sm:p-4">
+                            <h2 class="journalTitle pt-3 sm:pt-4">Preterm Baby 900 grams</h2>
+                        </div>
+                    </a>
+                </div>
+                <div class="journal flex flex-col">
+                    <a href="./blogs/preterm-baby.html" class="block">
+                        <img src="./assets/images/blogs/preterm-baby.png" alt="">
+                        <div class="p-0 sm:p-4">
+                            <h2 class="journalTitle pt-3 sm:pt-4">Preterm Baby 900 grams</h2>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="py-12 flex justify-center">
+                <a href="./blogs/index.html" class="commonOrangeButton">
+                    <span class="commonButtonContent">View All Articles</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-[#003D7A] text-white pt-20 pb-8">
+        <div class="w-full px-4 sm:px-20">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Shri Swami Bhumanand Hospital</h3>
+                    <p class="mb-4 leading-relaxed text-[#FCF0E9]">
+                        Rishikesh - Badrinath Rd, near AIIMS Rishikesh,<br />
+                        Shivaji Nagar, Rishikesh, Uttarakhand 249203
+                    </p>
+                    <div class="flex items-center mb-2 text-[#FCF0E9]">
+                        <i class="fas fa-phone-alt mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">+91 84494 49955</span>
+                    </div>
+                    <div class="flex items-center text-[#FCF0E9]">
+                        <i class="fas fa-envelope mr-2 text-white-300"></i>
+                        <span class="font-medium px-2">info@bhumanand.org</span>
+                    </div>
+                </div>
+                <div class="footer-section sm:px-12 lg:px-24">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Quick Links</h3>
+                    <ul class="space-y-2 text-[#E0E0E0]">
+                        <li><a href="./index.html" class="hover:text-orange-300 transition duration-200">Home</a></li>
+                        <li><a href="./about.html" class="hover:text-orange-300 transition duration-200">About Us</a>
+                        </li>
+                        <li><a href="./services/index.html" class="hover:text-orange-300 transition duration-200">Our
+                                Services</a></li>
+                        <li><a href="./doctors/index.html"
+                                class="hover:text-orange-300 transition duration-200">Doctors</a></li>
+                        <li><a href="./contact.html" class="hover:text-orange-300 transition duration-200">Contact
+                                Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section sm:px-5 lg:px-10">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Offerings</h3>
+                    <ul class="space-y-2 text-[#FCF0E9]">
+                        <li><a href="./services/cardiology.html"
+                                class="hover:text-orange-300 transition duration-200">Cardiology</a></li>
+                        <li><a href="./services/neurology.html"
+                                class="hover:text-orange-300 transition duration-200">Neurology</a></li>
+                        <li><a href="./services/orthopedics.html"
+                                class="hover:text-orange-300 transition duration-200">Orthopedics</a></li>
+                        <li><a href="./services/gastroenterology.html"
+                                class="hover:text-orange-300 transition duration-200">Gastroenterology</a></li>
+                        <li><a href="./services/gynecology.html"
+                                class="hover:text-orange-300 transition duration-200">Gynecology</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3 class="text-xl sm:text-2xl font-bold text-orange-400 mb-5">Connect With Us</h3>
+                    <div class="flex space-x-4 mb-4 text-[#FCF0E9]">
+                        <a href="https://www.facebook.com/SSBHospital?rdid=Oc79kSO64vpcgUFf&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F18jAcdRq1s%2F#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-facebook"></i></a>
+                        <a href="#" class="text-2xl hover:text-orange-300 transition duration-200"><i
+                                class="fab fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/ssb_hospital/?igsh=cW9ocWQ1bXpuemRh#" class="text-2xl hover:text-orange-300 transition duration-200">
+                            <i class="fab fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@bhumanandhospital" class="text-2xl hover:text-orange-300 transition duration-200">
+                                <i class="fab fa-youtube"></i>
+                        </a>
+                                
+                    </div>
+                    <p class="mb-2 text-gray-200 text-[#FCF0E9]">Subscribe to our newsletter for updates</p>
+                    <div class="mt-6 flex text-[#FCF0E9]">
+                        <input type="email" placeholder="Your Email"
+                            class="px-4 py-2 w-full text-gray-800 rounded-l-md focus:outline-none focus:ring-2 focus:ring-orange-400">
+                        <button
+                            class="bg-orange-500 hover:bg-orange-600 px-4 py-2 rounded-r-md transition">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="border-t border-gray-200 mt-16 pt-4 px-4 sm:px-6 text-sm text-[#FCF0E9]">
+            <div class="flex flex-col sm:flex-row justify-between items-center w-full sm:px-20 text-center sm:text-left">
+                <div class="flex flex-col sm:flex-row space-y-2 sm:space-y-0 sm:space-x-4 mb-4 sm:mb-0">
+                    <a href="./privacy-policy.html" class="hover:underline cursor-pointer">Privacy Policy</a>
+                    <span class="hidden sm:inline">|</span>
+                    <a href="./terms-and-conditions.html" class="hover:underline cursor-pointer">Terms and
+                        Conditions</a>
+                </div>
+                <div>
+                    <p>&copy; 2025 Shri Swami Bhumanand Hospital. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+        AOS.init({
+            duration: 800, // values from 0 to 3000, with step 50ms
+            once: true, // whether animation should happen only once - while scrolling down
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let slider = $('.doctorSlider');
+            let dots = $('.doctorDot');
+            slider.slick({
+                infinite: true,
+                slidesToShow: 5,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                centerMode: false,
+                variableWidth: false,
+                responsive: [
+                    { breakpoint: 1440, settings: { slidesToShow: 4 } },
+                    { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                    { breakpoint: 768, settings: { slidesToShow: 2 } },
+                    { breakpoint: 640, settings: { slidesToShow: 1, centerMode: false } }
+                ]
+            });
+            dots.click(function () {
+                let slideType = $(this).data('slide');
+
+                if (slideType === "prev") slider.slick('slickPrev');
+                else if (slideType === "next") slider.slick('slickNext');
+                else slider.slick('slickGoTo', 0);
+
+                dots.removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let slider = $('#patientSlider');
+            let dots = $('.patientDot');
+            slider.slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                centerMode: false,
+                variableWidth: false,
+                responsive: [
+                    { breakpoint: 1024, settings: { slidesToShow: 3 } },
+                    { breakpoint: 768, settings: { slidesToShow: 1, centerMode: false } }
+                ]
+            });
+            dots.click(function () {
+                let slideType = $(this).data('slide');
+
+                if (slideType === "prev") slider.slick('slickPrev');
+                else if (slideType === "next") slider.slick('slickNext');
+                else slider.slick('slickGoTo', 0);
+
+                dots.removeClass('active');
+                $(this).addClass('active');
+            });
+            $('#prevArrow').click(function () {
+                slider.slick('slickPrev');
+            });
+
+            $('#nextArrow').click(function () {
+                slider.slick('slickNext');
+            });
+        });
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            let slider = $('#departmentSlider');
+            let dots = $('.departmentDot');
+            slider.slick({
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                arrows: false,
+                dots: false,
+                centerMode: false,
+                variableWidth: false,
+                autoplay: true,
+                autoplaySpeed: 2000,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+            dots.click(function () {
+                let slideType = $(this).data('slide');
+
+                if (slideType === "prev") slider.slick('slickPrev');
+                else if (slideType === "next") slider.slick('slickNext');
+                else slider.slick('slickGoTo', 0);
+
+                dots.removeClass('active');
+                $(this).addClass('active');
+            });
+        });
+    </script>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const menuButton = document.getElementById('mobile-menu-button');
+            const mobileMenu = document.getElementById('mobile-menu');
+            const body = document.body;
+
+            if (menuButton && mobileMenu) {
+                menuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    if (!mobileMenu.classList.contains('hidden')) {
+                        body.style.overflow = 'hidden';
+                    } else {
+                        body.style.overflow = '';
+                    }
+                });
+            }
+        });
+    </script>
+</body>
+
+</html>

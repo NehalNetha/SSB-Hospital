@@ -1,0 +1,25 @@
+@media (min-width: 640px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 768px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1024px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1280px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1536px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }

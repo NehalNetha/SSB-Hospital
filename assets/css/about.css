@@ -1,0 +1,109 @@
+@font-face {
+    font-family: "Roboto-SemiBold.ttf";
+    src: url('../fonts/roboto/static/Roboto-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url('../fonts/roboto/static/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Bold.ttf";
+    src: url('../fonts/roboto/static/Roboto-Bold.ttf');
+}
+
+.aboutUsHeading {
+    color: #FFF;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+.ourFounderBoldHeading {
+    color: #5A5B7A;
+    font-family: "Roboto-Bold.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 31px;
+}
+
+.aboutUsDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px;
+}
+
+.ourFounderTitle {
+    color: #FC6A1F;
+    font-family: "Roboto-Bold.ttf";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.visionMissionBox {
+    border-radius: 16px;
+    background: #FFF;
+    box-shadow: 0px 4px 4px 0px rgba(62, 64, 149, 0.25);
+}
+
+.visionMissionHeading {
+    color: #FC6A1F;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-align: center;
+}
+
+.visionMissionDiscription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+@media (min-width: 640px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 768px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}

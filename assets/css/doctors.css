@@ -1,0 +1,170 @@
+@font-face {
+    font-family: "Roboto-SemiBold.ttf";
+    src: url('../fonts/roboto/static/Roboto-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url('../fonts/roboto/static/Roboto-Medium.ttf');
+}
+
+.doctorEducation {
+    color: #FC6A1F;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorName {
+    color: #FFF;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.aboutDoctor {
+    color: #F1F1F1;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 31px; 
+}
+
+.doctorPersonalDetail {
+    color: #F1F1F1;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.doctorcommonBorder {
+    border: none;
+}
+
+.doctorIntroductionTitle {
+    color: #161861;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.doctorIntroductionDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.doctorIntroductionSubTitle {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.doctorPersonalInformation {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.receiveCallHeading {
+    color: #161861;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-transform: capitalize;
+}
+
+.doctorSection input, .doctorSection textarea {
+    color: #7375AC;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    border-radius: 8px;
+    border: 1px solid rgba(252, 106, 31, 0.36);
+}
+
+.explorePlaneHeading {
+    color: #FFF;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.explorePlaneDescription {
+    color: #FFF;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px; 
+}
+
+
+
+@media (min-width: 640px) { 
+    .doctorName {
+        font-size: 56px;
+    }  
+    .doctorcommonBorder {
+        border-right: none;
+    }
+    .doctorPersonalDetail {
+        font-size: 20px;
+    }
+    .doctorIntroductionTitle {
+        font-size: 56px;
+    }
+    .doctorIntroductionDescription {
+        font-size: 18px;
+    }
+    .doctorIntroductionSubTitle {
+        font-size: 22px;
+    }
+    .doctorSection input, .doctorSection textarea {
+        font-size: 16px;
+        border-radius: 16px;
+    }
+ }
+@media (min-width: 768px) { 
+    .doctorcommonBorder {
+        border-right: none;
+    }
+ }
+@media (min-width: 1024px) { 
+    .doctorcommonBorder {
+        border-right: 1px solid #5788BC;
+    }
+ }
+@media (min-width: 1536px) { 
+
+ }
+  

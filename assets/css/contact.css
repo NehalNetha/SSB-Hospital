@@ -1,0 +1,75 @@
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url('../fonts/roboto/static/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Bold.ttf";
+    src: url('../fonts/roboto/static/Roboto-Bold.ttf');
+}
+
+.contactHeading { font-family: "Roboto-Bold.ttf"; font-style: normal; font-weight: 400; font-size: 56px; line-height: 32px; color: #FC6A1F; }
+.getInTouch { font-family: "Roboto-Medium.ttf"; font-style: normal; font-weight: 400; font-size: 28px; color: #3E4095; }
+.contactField { font-family: "Roboto-Medium.ttf"; font-style: normal; font-weight: 400; font-size: 20px; color: #FC6A1F; cursor: pointer; }
+.contactButton { border-radius: 100px; border: 1px solid #FC6A1F; outline: none; background-color: transparent; padding: 3px 15px; }
+.insertSection { border-bottom: 1px solid #FC6A1F; display: block; width: 100%; padding: 4px 8px; background-color: transparent; }
+.insertTitle input, .insertTitle textarea { font-family: "Roboto-Medium.ttf"; font-style: normal; font-weight: 400; font-size: 20px; color: #3E4095;} 
+.insertSection:focus, .insertTitle input:focus, .insertTitle textarea:focus { outline: none; background-color: transparent !important; } 
+.error-message { color: #EE4266; margin-top: 5px; }
+.contactButton.selected { background-color: #EE4266; color: white; border: 2px solid #e5e7eb; }
+.insertTitle input::placeholder,.insertTitle textarea::placeholder { color: #FC6A1F; font-size: 20px;}
+
+
+
+.contactTitle {
+    color: #3E4095;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+ }
+
+ .contactDiscription {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+ }
+ 
+
+
+@media (min-width: 640px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 768px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1024px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1280px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+@media (min-width: 1536px) { 
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+ }
+
+

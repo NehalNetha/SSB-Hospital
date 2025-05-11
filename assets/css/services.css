@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "Roboto-SemiBold.ttf";
+    src: url('../fonts/roboto/static/Roboto-SemiBold.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Medium.ttf";
+    src: url('../fonts/roboto/static/Roboto-Medium.ttf');
+}
+
+@font-face {
+    font-family: "Roboto-Regular.ttf";
+    src: url('../fonts/roboto/static/Roboto-Regular.ttf');
+}
+
+.serviceUsHeading {
+    color: #FFF;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+.servicesBox {
+    padding: 32px 45px 23px 22px;
+}
+
+.serviceNameHeading {
+    color: #002C5B;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.serviceDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+
+#services-slider-container {
+    max-width: 100%;
+    overflow: hidden;
+}
+
+#services-slider {
+    display: flex;
+    gap: 12px;
+}
+
+#services-slider .service-card {
+    width: calc(25% - 9px);
+    margin: 0px 6px;
+    box-sizing: border-box;
+}
+
+/* ///////////////// */
+
+
+.insideServiceTitle {
+    color: #FFF;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.insideServiceDescription {
+    color: #F1F1F1;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+.serviceOverviewHeading {
+    color: #161861;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.serviceOverviewDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.serviceOfferedTitle {
+    color: #161861;
+    font-family: "Roboto-SemiBold.ttf";
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.serviceOfferedSubTitle {
+    color: #283D53;
+    font-family: "Roboto-Medium.ttf";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.serviceOfferedDescription {
+    color: #5A5B7A;
+    font-family: "Roboto-Regular.ttf";
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+
+
+/* Initial fade-in animation */
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Hover effect */
+.hover-effect {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-effect:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+
+
+
+@media (min-width: 640px) {
+
+}
+
+@media (min-width: 768px) {
+    .insideServiceTitle {
+        font-size: 36px;
+    }
+    .insideServiceDescription {
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .serviceOverviewHeading {
+        font-size: 40px;
+    }
+    .serviceOverviewDescription {
+        font-size: 18px;
+    }
+    .serviceOfferedTitle { 
+        font-size: 32px;
+    }
+    .serviceOfferedSubTitle { 
+        font-size: 22px;
+    }
+    .serviceOfferedDescription {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .insideServiceTitle {
+        font-size: 56px;
+    }
+    .insideServiceDescription {
+        font-size: 20px;
+        line-height: 31px;
+    }
+    .serviceOverviewHeading {
+        font-size: 56px;
+    }
+    .serviceOverviewDescription {
+        font-size: 18px;
+    }
+    .serviceOfferedTitle { 
+        font-size: 32px;
+    }
+    .serviceOfferedSubTitle { 
+        font-size: 22px;
+    }
+    .serviceOfferedDescription {
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
+
+@media (min-width: 1536px) {
+    .aboutHeadingTitle {
+        font-size: 90px;
+    }
+}
